@@ -41,6 +41,27 @@ class OverworldMap {
     const { x, y } = utils.nextPosition(currentX, currentY, direction);
     return this.walls[`${x},${y}`] || false;
   }
+
+  mountObjects() {
+    Object.values(this.gameObjects).forEach((object) => {
+      // TODO: determine if this object should actually mount
+      // @ts-ignore
+      object.mount(this);
+    });
+  }
+
+  //gameObjects들에 대한 collision 반영을 위해
+  addWall(x: number, y: number) {
+    this.walls[`${x},${y}`] = true;
+  }
+  removeWall(x: number, y: number) {
+    delete this.walls[`${x},${y}`];
+  }
+  moveWall(wasX: number, wasY: number, direction: string) {
+    this.removeWall(wasX, wasY);
+    const { x, y } = utils.nextPosition(wasX, wasY, direction);
+    this.addWall(x, y);
+  }
 }
 
 window.OverworldMaps = {

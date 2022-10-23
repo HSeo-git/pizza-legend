@@ -48,6 +48,8 @@ class Person extends GameObject {
         return;
       }
       //ready to walk
+      //wall이 움직이도록(움직이지 않으면 hero의 원래 위치에 wall이 있어서 거기로 못 감)
+      state.map.moveWall(this.x, this.y, this.direction);
       this.movingProgressRemaining = 16;
     }
   }
