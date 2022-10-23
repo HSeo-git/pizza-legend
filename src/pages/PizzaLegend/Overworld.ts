@@ -60,6 +60,7 @@ class Overworld {
 
   init() {
     this.map = new OverworldMap(window.OverworldMaps.DemoRoom);
+    this.map.mountObjects();
     this.directionInput.init();
     this.startGameLoop();
     // const image = new Image();
