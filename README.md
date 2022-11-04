@@ -8,7 +8,7 @@ https://www.youtube.com/watch?v=fyi4vfbKEeo&list=PLcjhmZ8oLT0r9dSiIK6RB_PuBWlG1K
 # Difference
 This project has a different tech stack. <br>
 (The original code was written with HTML, CSS, JS) <br>
-The specs are like the below:
+The tech stack is like the below:
 - React
 - TypeScript
 - Tailwind
