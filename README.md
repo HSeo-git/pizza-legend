@@ -1,5 +1,5 @@
 # pizza-legend
-clone coding of PizzaRPG(original author: Drew Conely)
+The clone coding of PizzaRPG(original author: Drew Conely)
 
 # source
 Drew Conley Pizza RPG Youtube <br>
